@@ -15,6 +15,14 @@ We started by downloading and uploading a word list and then we created a functi
 
 `main.py`: Script that serves as the server for the Wordle Unlimited game to generate a random word
 
+`client.py`: Script that serves as the client for the Wordle Unlimited game so that the player can input word guesses
+
+`words.txt`: txt file containing the word list imported from website linked in the online resources section
+
+`file1.txt`: txt file containing only a few words to use as a tester
+
+`dylan.py`: Script that is used exclusively as a tester function
+
 ## Functions
 
 ### `main.py`
