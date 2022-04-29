@@ -1,11 +1,11 @@
 # CS-32-FP
 CS32 Final Project for Group 1 (Brian Kim, Allison Park, Dylan Park)
 
-# Replit link for the game
+## Replit Link for the Final Project
 https://replit.com/join/rjdmxiaftl-allisonskypark
 
 ## Our Plan
-Dylan, Brian, and Allison intend to make an expanded version of Wordle called Wordle Unlimited. Wordle is currently a popular game, in which users have 6 attempts to guess the 5-letter word of the day. With each guess, Wordle checks each letter of the user’s answer and tells the user whether or not the letters of their guess are in the actual word and if the correct letter is in the right location. Our version will have a word of variable length (5 to 10 letters), but otherwise function similarly to Wordle. We also decided to call it Wordle Unlimited because users have an unlimited amount of guesses. Some tools from class that we will be utilizing are accessing a set of words from a txt file, using server and client relations, and utilizing ANSI values for color. 
+Dylan, Brian, and Allison intend to make an expanded version of Wordle called Wordle Unlimited. Wordle is currently a popular game, in which users have 6 attempts to guess the 5-letter word of the day. With each guess, Wordle checks each letter of the user’s answer and tells the user whether or not the letters of their guess are in the actual word and if the correct letter is in the right location. Our version will have a word of variable length (5 to 10 letters), but otherwise function similarly to Wordle. We also decided to call it Wordle Unlimited because users have an unlimited amount of guesses. Some tools from class that we will be utilizing are accessing a set of words from a txt file, using server and client relations, and utilizing ANSI values for color.
 
 ## Online Resources
 Word list from https://svnweb.freebsd.org/csrg/share/dict/words?revision=61569&view=markup
@@ -16,15 +16,19 @@ We started by downloading and uploading a word list and then we created a functi
 ## Description of file
 `socket32.py`, `check32.py`: Scripts used in Problem Set 2 for CS32 to put a simpler interface on the `socket` library and used to create a client-server relationship in the game Wordle Unlimited.
 
-`main.py`: Script that serves as the server for the Wordle Unlimited game to generate a random word
+`server.py`: Script that serves as the server for the Wordle Unlimited game that runs all three functions explained below, generates a random word, and ends the game.
 
-`client.py`: Script that serves as the client for the Wordle Unlimited game so that the player can input word guesses
+`client.py`: Script that serves as the client for the Wordle Unlimited game so that the player can input word guesses and specify the length of the word in the game they want to play. Disconnects when game is over.
 
 `words.txt`: txt file containing the word list imported from website linked in the online resources section
 
-`file1.txt`: txt file containing only a few words to use as a tester
+`output.txt`: txt file created from `test2.py` to essentially test the `create_word_list(number)` function
 
-`dylan.py`: Script that is used exclusively as a tester function
+`test1.py`: Script that is used exclusively as a tester function to test `wordle(choice, guess, guesses_past)`
+
+`test2.py`: Script that is used exclusively as a tester function to test `create_word_list(number)`and outputs result into `output.txt`
+
+`test3.py`: Script that is used exclusively as a tester function to test the functionality of `track_letters(choice, guess, past)`
 
 ## Functions
 
