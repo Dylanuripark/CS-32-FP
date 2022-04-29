@@ -1,19 +1,30 @@
 # CS-32-FP
+
 CS32 Final Project for Group 1 (Brian Kim, Allison Park, Dylan Park)
 
 ## Replit Link for the Final Project
+
 https://replit.com/join/rjdmxiaftl-allisonskypark
 
 ## Our Plan
+
 Dylan, Brian, and Allison intend to make an expanded version of Wordle called Wordle Unlimited. Wordle is currently a popular game, in which users have 6 attempts to guess the 5-letter word of the day. With each guess, Wordle checks each letter of the user’s answer and tells the user whether or not the letters of their guess are in the actual word and if the correct letter is in the right location. Our version will have a word of variable length (5 to 10 letters), but otherwise function similarly to Wordle. We also decided to call it Wordle Unlimited because users have an unlimited amount of guesses. Some tools from class that we will be utilizing are accessing a set of words from a txt file, using server and client relations, and utilizing ANSI values for color.
 
 ## Online Resources
+
 Word list from https://svnweb.freebsd.org/csrg/share/dict/words?revision=61569&view=markup
 
 ## First Steps
+
 We started by downloading and uploading a word list and then we created a function to revise the word list to better fit our functions. In this case, the criteria we use are that words have to be lowercase, they must be greater than 3 letters, and doesn't have any punctuations (apostrophe, comma, and period). We also worked on the guess checker as well, allowing the server to receive a guess and check the player guess with the actual word, giving back different feedback depending on the letters and their position.
 
-## Description of file
+## How the Code Works
+
+It takes the user prompt to decide the length of the word and generates a random word with that length on the server. It will then provide a blank space for the amount of letters in the word and prompts the user to input a valid word (i.e. same number of letters and a word in english). This will then give the user an output that contains green letters for letters in the guess that are in the correct space and yellow for letters that are in the wrong space. Letters in the guess that are not in the actual word will show up as the standard console color (in replit, white). This input cycle of a valid word and the subsequent response continues until the user guesses the correct word. The output will also give the number of guesses and the past results for each input as well as an alphabetical list of incorrect letters already used in the guess.
+
+
+## Description of File
+
 `socket32.py`, `check32.py`: Scripts used in Problem Set 2 for CS32 to put a simpler interface on the `socket` library and used to create a client-server relationship in the game Wordle Unlimited.
 
 `server.py`: Script that serves as the server for the Wordle Unlimited game that runs all three functions explained below, generates a random word, and ends the game.
