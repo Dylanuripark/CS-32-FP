@@ -25,7 +25,7 @@ We started by downloading and uploading a word list and then we created a functi
 
 ## Functions
 
-### `main.py`
+### `server.py`
 `create_word_list()`: Opens a txt file of a wordbank from the URL above and returns a simplified word list based on criteria defined in First Steps.
 
 `wordle()`: Checks the user's input, default text color (white in Replit) shows incorrect letter guesses, green color shows letter guess in the right place, and yellow color shows correct letter guesses but in incorrect place. Just like the game Wordle, if one letter is used in multiple places, only one letter in one place will feature some color. If that place is the correct guess, then the function will pioritize the letter in that correct location to show the green color. Otherwise, it will show a yellow in one of the places (meaning the letter was placed incorrectly in both locations). 
