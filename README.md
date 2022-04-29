@@ -1,5 +1,5 @@
 # CS-32-FP
-Our CS32 Final Project (Brian Kim, Allison Park, Dylan Park)
+CS32 Final Project for Group 1 (Brian Kim, Allison Park, Dylan Park)
 
 ## Our Plan
 Dylan, Brian, and Allison intend to make an expanded version of Wordle called Wordle Unlimited. Wordle is currently a popular game, in which users have 6 attempts to guess the 5-letter word of the day. With each guess, Wordle checks each letter of the user’s answer and tells the user whether or not the letters of their guess are in the actual word and if the correct letter is in the right location. Our version will have a word of variable length, but otherwise function similarly to Wordle. Some tools from class that we will be utilizing are accessing a dictionary of set words, using server and client relations, and utilizing RGB values. 
@@ -26,5 +26,8 @@ We started by downloading and uploading a word list and then we created a functi
 ## Functions
 
 ### `main.py`
-create_word_list(): Opens a txt file of a wordbank from the URL above and returns a simplified word list based on criteria defined in First Steps.
+`create_word_list()`: Opens a txt file of a wordbank from the URL above and returns a simplified word list based on criteria defined in First Steps.
+`wordle()`: Checks the user's input, default text color (white in Replit) shows incorrect letter guesses, green color shows letter guess in the right place, and yellow color shows correct letter guesses but in incorrect place. Just like the game Wordle, if one letter is used in multiple places, only one letter in one place will feature some color. If that place is the correct guess, then the function will pioritize the letter in that correct location to show the green color. Otherwise, it will show a yellow in one of the places (meaning the letter was placed incorrectly in both locations). 
+
+
 
