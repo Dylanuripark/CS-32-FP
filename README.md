@@ -1,4 +1,4 @@
-# CS-32-FP
+# CS-32-FP (Wordle Unlimited)
 
 CS32 Final Project for Group 1 (Brian Kim, Allison Park, Dylan Park)
 
