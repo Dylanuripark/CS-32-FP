@@ -5,7 +5,7 @@ CS32 Final Project for Group 1 (Brian Kim, Allison Park, Dylan Park)
 https://replit.com/join/rjdmxiaftl-allisonskypark
 
 ## Our Plan
-Dylan, Brian, and Allison intend to make an expanded version of Wordle called Wordle Unlimited. Wordle is currently a popular game, in which users have 6 attempts to guess the 5-letter word of the day. With each guess, Wordle checks each letter of the user’s answer and tells the user whether or not the letters of their guess are in the actual word and if the correct letter is in the right location. Our version will have a word of variable length, but otherwise function similarly to Wordle. Some tools from class that we will be utilizing are accessing a dictionary of set words, using server and client relations, and utilizing RGB values. 
+Dylan, Brian, and Allison intend to make an expanded version of Wordle called Wordle Unlimited. Wordle is currently a popular game, in which users have 6 attempts to guess the 5-letter word of the day. With each guess, Wordle checks each letter of the user’s answer and tells the user whether or not the letters of their guess are in the actual word and if the correct letter is in the right location. Our version will have a word of variable length (5 to 10 letters), but otherwise function similarly to Wordle. We also decided to call it Wordle Unlimited because users have an unlimited amount of guesses. Some tools from class that we will be utilizing are accessing a set of words from a txt file, using server and client relations, and utilizing ANSI values for color. 
 
 ## Online Resources
 Word list from https://svnweb.freebsd.org/csrg/share/dict/words?revision=61569&view=markup
